@@ -1,9 +1,9 @@
-#include "maze_dig.hpp"
+#include "maze_gen.hpp"
 
 int main()
 {
     int width, height;
-    maze::dig::vvInt map;
+    maze::vvInt map;
 
     while (1)
     {
