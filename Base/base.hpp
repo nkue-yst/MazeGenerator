@@ -1,3 +1,10 @@
+/**
+ * @file base.hpp
+ * @brief 共用の変数等を定義
+ * @author Yoshito Nakaue
+ * @date 2019/09/07
+ */
+
 #pragma once
 #include <string>
 #include <vector>

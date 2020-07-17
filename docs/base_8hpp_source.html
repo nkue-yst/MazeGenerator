@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MazeGenerator_doc: Base/base.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MazeGenerator_doc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_628593db0cdce5a76fb85526ae5aa762.html">Base</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">base.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="base_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespacemaze.html">   12</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemaze.html">maze</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespacemaze.html#a6e4ac86ac75d8b75b9996cf523585c0f">   14</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacemaze.html#a6e4ac86ac75d8b75b9996cf523585c0f">vInt</a> = std::vector&lt;int&gt;;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacemaze.html#ac03f8d9cc1466d7123dde4a061703938">   15</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacemaze.html#ac03f8d9cc1466d7123dde4a061703938">vvInt</a> = std::vector&lt;vInt&gt;;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacemaze.html#a62e64796254d868077064efe541d3c94">   17</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="namespacemaze.html#a62e64796254d868077064efe541d3c94">ROAD</a> = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespacemaze.html#abb4cc3cae5cad95c9d4523212023fc26">   18</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="namespacemaze.html#abb4cc3cae5cad95c9d4523212023fc26">WALL</a> = 1;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacemaze.html#a1470f540cc92d249243f96f7c224bcea">   19</a></span>&#160;    <span class="keyword">const</span> std::string <a class="code" href="namespacemaze.html#a1470f540cc92d249243f96f7c224bcea">errMsg</a> = <span class="stringliteral">&quot;Width and Height must be 5 or more.&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespacemaze_html_abb4cc3cae5cad95c9d4523212023fc26"><div class="ttname"><a href="namespacemaze.html#abb4cc3cae5cad95c9d4523212023fc26">maze::WALL</a></div><div class="ttdeci">const int WALL</div><div class="ttdef"><b>Definition:</b> base.hpp:18</div></div>
+<div class="ttc" id="anamespacemaze_html_ac03f8d9cc1466d7123dde4a061703938"><div class="ttname"><a href="namespacemaze.html#ac03f8d9cc1466d7123dde4a061703938">maze::vvInt</a></div><div class="ttdeci">std::vector&lt; vInt &gt; vvInt</div><div class="ttdef"><b>Definition:</b> base.hpp:15</div></div>
+<div class="ttc" id="anamespacemaze_html"><div class="ttname"><a href="namespacemaze.html">maze</a></div><div class="ttdef"><b>Definition:</b> base.hpp:13</div></div>
+<div class="ttc" id="anamespacemaze_html_a62e64796254d868077064efe541d3c94"><div class="ttname"><a href="namespacemaze.html#a62e64796254d868077064efe541d3c94">maze::ROAD</a></div><div class="ttdeci">const int ROAD</div><div class="ttdef"><b>Definition:</b> base.hpp:17</div></div>
+<div class="ttc" id="anamespacemaze_html_a6e4ac86ac75d8b75b9996cf523585c0f"><div class="ttname"><a href="namespacemaze.html#a6e4ac86ac75d8b75b9996cf523585c0f">maze::vInt</a></div><div class="ttdeci">std::vector&lt; int &gt; vInt</div><div class="ttdef"><b>Definition:</b> base.hpp:14</div></div>
+<div class="ttc" id="anamespacemaze_html_a1470f540cc92d249243f96f7c224bcea"><div class="ttname"><a href="namespacemaze.html#a1470f540cc92d249243f96f7c224bcea">maze::errMsg</a></div><div class="ttdeci">const std::string errMsg</div><div class="ttdef"><b>Definition:</b> base.hpp:19</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

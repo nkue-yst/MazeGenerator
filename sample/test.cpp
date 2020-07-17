@@ -1,4 +1,4 @@
-#include "maze_gen.hpp"
+#include "../maze_gen.hpp"
 
 int main()
 {

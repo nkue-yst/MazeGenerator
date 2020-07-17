@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MazeGenerator_doc: dig/maze_dig.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MazeGenerator_doc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0c9dc045d7a48c8593d4dfa442c908b1.html">dig</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">maze_dig.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="maze__dig_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Base/base.hpp&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemaze.html">maze</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacemaze_1_1dig.html">   15</a></span>&#160;    <span class="keyword">namespace </span>dig</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structmaze_1_1dig_1_1vec2.html">   18</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmaze_1_1dig_1_1vec2.html">vec2</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structmaze_1_1dig_1_1vec2.html#aad9601095ed3491624e7577e3c5ed384">   20</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structmaze_1_1dig_1_1vec2.html#aad9601095ed3491624e7577e3c5ed384">x</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structmaze_1_1dig_1_1vec2.html#a5e8e09ff10b1fd8d2bc8ea691a16718e">   21</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structmaze_1_1dig_1_1vec2.html#a5e8e09ff10b1fd8d2bc8ea691a16718e">y</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        } <a class="code" href="namespacemaze_1_1dig.html#a9317f644439b6ecef251ecbc6052ea3a">dir</a>[] = {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            {0, -1},</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            {1, 0},</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            {0, 1},</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            {-1, 0},</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacemaze_1_1dig.html#a9317f644439b6ecef251ecbc6052ea3a">   27</a></span>&#160;        };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacemaze_1_1dig.html#ac2dfdaa98cfbff02e7b30020d91b466f">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="namespacemaze_1_1dig.html#ac2dfdaa98cfbff02e7b30020d91b466f">initMap</a>(<a class="code" href="namespacemaze.html#ac03f8d9cc1466d7123dde4a061703938">vvInt</a>&amp; map, <span class="keywordtype">int</span>&amp; width, <span class="keywordtype">int</span>&amp; height)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">if</span> (width &lt; 5 || height &lt; 5)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                std::cout &lt;&lt; <a class="code" href="namespacemaze.html#a1470f540cc92d249243f96f7c224bcea">errMsg</a> &lt;&lt; std::endl &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> (width % 2 == 0) width++;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span> (height % 2 == 0) height++;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            map.assign(width, <a class="code" href="namespacemaze.html#a6e4ac86ac75d8b75b9996cf523585c0f">vInt</a>(height, <a class="code" href="namespacemaze.html#abb4cc3cae5cad95c9d4523212023fc26">WALL</a>));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespacemaze_1_1dig.html#a3980350b30afd257a831bbf67d3c795c">   58</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="namespacemaze_1_1dig.html#a3980350b30afd257a831bbf67d3c795c">randomOdd</a>(<span class="keywordtype">int</span> mod)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            srand((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)time(NULL));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">int</span> r = 1 + rand() % mod;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (r % 2 == 0) r++;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span> (r &gt; mod) r -= 2;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="namespacemaze_1_1dig.html#aa536c6d7b3825500c7e1d69b1a9f7f69">   77</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="namespacemaze_1_1dig.html#aa536c6d7b3825500c7e1d69b1a9f7f69">digMaze</a>(<a class="code" href="namespacemaze.html#ac03f8d9cc1466d7123dde4a061703938">vvInt</a>&amp; map, <span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">int</span> d = rand() % 4;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">int</span> dd = d;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">while</span> (1)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordtype">size_t</span> dx = x + <a class="code" href="namespacemaze_1_1dig.html#a9317f644439b6ecef251ecbc6052ea3a">dir</a>[d].<a class="code" href="structmaze_1_1dig_1_1vec2.html#aad9601095ed3491624e7577e3c5ed384">x</a> * 2;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordtype">size_t</span> dy = y + <a class="code" href="namespacemaze_1_1dig.html#a9317f644439b6ecef251ecbc6052ea3a">dir</a>[d].<a class="code" href="structmaze_1_1dig_1_1vec2.html#a5e8e09ff10b1fd8d2bc8ea691a16718e">y</a> * 2;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">if</span> (dx &lt; 0 || map.size() &lt;= dx || dy &lt; 0 || map[0].size() &lt;= dy || map[dx][dy] != <a class="code" href="namespacemaze.html#abb4cc3cae5cad95c9d4523212023fc26">WALL</a>)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    d++;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordflow">if</span> (d == 4) d = 0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                    <span class="keywordflow">if</span> (d == dd) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                map[dx][dy] = <a class="code" href="namespacemaze.html#a62e64796254d868077064efe541d3c94">ROAD</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                map[x + <a class="code" href="namespacemaze_1_1dig.html#a9317f644439b6ecef251ecbc6052ea3a">dir</a>[d].<a class="code" href="structmaze_1_1dig_1_1vec2.html#aad9601095ed3491624e7577e3c5ed384">x</a>][y + <a class="code" href="namespacemaze_1_1dig.html#a9317f644439b6ecef251ecbc6052ea3a">dir</a>[d].<a class="code" href="structmaze_1_1dig_1_1vec2.html#a5e8e09ff10b1fd8d2bc8ea691a16718e">y</a>] = <a class="code" href="namespacemaze.html#a62e64796254d868077064efe541d3c94">ROAD</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <a class="code" href="namespacemaze_1_1dig.html#aa536c6d7b3825500c7e1d69b1a9f7f69">digMaze</a>(map, dx, dy);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                d = dd = rand() % 4;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="namespacemaze_1_1dig.html#ac400ea0f6f21ed43c2f662a087442c81">  111</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="namespacemaze_1_1dig.html#ac400ea0f6f21ed43c2f662a087442c81">createMaze</a>(<a class="code" href="namespacemaze.html#ac03f8d9cc1466d7123dde4a061703938">vvInt</a>&amp; map, <span class="keywordtype">int</span>&amp; width, <span class="keywordtype">int</span>&amp; height)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="namespacemaze_1_1dig.html#ac2dfdaa98cfbff02e7b30020d91b466f">initMap</a>(map, width, height)) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordtype">int</span> x = <a class="code" href="namespacemaze_1_1dig.html#a3980350b30afd257a831bbf67d3c795c">randomOdd</a>(width - 2);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordtype">int</span> y = <a class="code" href="namespacemaze_1_1dig.html#a3980350b30afd257a831bbf67d3c795c">randomOdd</a>(height - 2);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="namespacemaze_1_1dig.html#aa536c6d7b3825500c7e1d69b1a9f7f69">digMaze</a>(map, x, y);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="namespacemaze_1_1dig.html#ab12aaccfbbf166c6c19b70f4cb6a2e10">  128</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="namespacemaze_1_1dig.html#ab12aaccfbbf166c6c19b70f4cb6a2e10">printMap</a>(<span class="keyword">const</span> <a class="code" href="namespacemaze.html#ac03f8d9cc1466d7123dde4a061703938">vvInt</a> map)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> y = 0; y &lt; map[0].size(); y++)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> x = 0; x &lt; map.size(); x++)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    std::cout &lt;&lt; ((map[x][y] == <a class="code" href="namespacemaze.html#abb4cc3cae5cad95c9d4523212023fc26">WALL</a>) ? <span class="stringliteral">&quot;* &quot;</span> : <span class="stringliteral">&quot;  &quot;</span>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespacemaze_1_1dig_html_a9317f644439b6ecef251ecbc6052ea3a"><div class="ttname"><a href="namespacemaze_1_1dig.html#a9317f644439b6ecef251ecbc6052ea3a">maze::dig::dir</a></div><div class="ttdeci">struct maze::dig::vec2 dir[]</div></div>
+<div class="ttc" id="astructmaze_1_1dig_1_1vec2_html"><div class="ttname"><a href="structmaze_1_1dig_1_1vec2.html">maze::dig::vec2</a></div><div class="ttdoc">2次元ベクトル</div><div class="ttdef"><b>Definition:</b> maze_dig.hpp:19</div></div>
+<div class="ttc" id="anamespacemaze_1_1dig_html_aa536c6d7b3825500c7e1d69b1a9f7f69"><div class="ttname"><a href="namespacemaze_1_1dig.html#aa536c6d7b3825500c7e1d69b1a9f7f69">maze::dig::digMaze</a></div><div class="ttdeci">void digMaze(vvInt &amp;map, const int x, const int y)</div><div class="ttdoc">穴掘り法を実行する</div><div class="ttdef"><b>Definition:</b> maze_dig.hpp:77</div></div>
+<div class="ttc" id="anamespacemaze_html_abb4cc3cae5cad95c9d4523212023fc26"><div class="ttname"><a href="namespacemaze.html#abb4cc3cae5cad95c9d4523212023fc26">maze::WALL</a></div><div class="ttdeci">const int WALL</div><div class="ttdef"><b>Definition:</b> base.hpp:18</div></div>
+<div class="ttc" id="anamespacemaze_1_1dig_html_a3980350b30afd257a831bbf67d3c795c"><div class="ttname"><a href="namespacemaze_1_1dig.html#a3980350b30afd257a831bbf67d3c795c">maze::dig::randomOdd</a></div><div class="ttdeci">int randomOdd(int mod)</div><div class="ttdoc">ランダムな奇数を生成</div><div class="ttdef"><b>Definition:</b> maze_dig.hpp:58</div></div>
+<div class="ttc" id="anamespacemaze_html_ac03f8d9cc1466d7123dde4a061703938"><div class="ttname"><a href="namespacemaze.html#ac03f8d9cc1466d7123dde4a061703938">maze::vvInt</a></div><div class="ttdeci">std::vector&lt; vInt &gt; vvInt</div><div class="ttdef"><b>Definition:</b> base.hpp:15</div></div>
+<div class="ttc" id="anamespacemaze_html"><div class="ttname"><a href="namespacemaze.html">maze</a></div><div class="ttdef"><b>Definition:</b> base.hpp:13</div></div>
+<div class="ttc" id="anamespacemaze_1_1dig_html_ac2dfdaa98cfbff02e7b30020d91b466f"><div class="ttname"><a href="namespacemaze_1_1dig.html#ac2dfdaa98cfbff02e7b30020d91b466f">maze::dig::initMap</a></div><div class="ttdeci">int initMap(vvInt &amp;map, int &amp;width, int &amp;height)</div><div class="ttdoc">マップ内全てを壁で初期化する</div><div class="ttdef"><b>Definition:</b> maze_dig.hpp:37</div></div>
+<div class="ttc" id="astructmaze_1_1dig_1_1vec2_html_a5e8e09ff10b1fd8d2bc8ea691a16718e"><div class="ttname"><a href="structmaze_1_1dig_1_1vec2.html#a5e8e09ff10b1fd8d2bc8ea691a16718e">maze::dig::vec2::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> maze_dig.hpp:21</div></div>
+<div class="ttc" id="anamespacemaze_html_a62e64796254d868077064efe541d3c94"><div class="ttname"><a href="namespacemaze.html#a62e64796254d868077064efe541d3c94">maze::ROAD</a></div><div class="ttdeci">const int ROAD</div><div class="ttdef"><b>Definition:</b> base.hpp:17</div></div>
+<div class="ttc" id="astructmaze_1_1dig_1_1vec2_html_aad9601095ed3491624e7577e3c5ed384"><div class="ttname"><a href="structmaze_1_1dig_1_1vec2.html#aad9601095ed3491624e7577e3c5ed384">maze::dig::vec2::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> maze_dig.hpp:20</div></div>
+<div class="ttc" id="anamespacemaze_html_a6e4ac86ac75d8b75b9996cf523585c0f"><div class="ttname"><a href="namespacemaze.html#a6e4ac86ac75d8b75b9996cf523585c0f">maze::vInt</a></div><div class="ttdeci">std::vector&lt; int &gt; vInt</div><div class="ttdef"><b>Definition:</b> base.hpp:14</div></div>
+<div class="ttc" id="anamespacemaze_1_1dig_html_ac400ea0f6f21ed43c2f662a087442c81"><div class="ttname"><a href="namespacemaze_1_1dig.html#ac400ea0f6f21ed43c2f662a087442c81">maze::dig::createMaze</a></div><div class="ttdeci">int createMaze(vvInt &amp;map, int &amp;width, int &amp;height)</div><div class="ttdoc">迷路を生成する</div><div class="ttdef"><b>Definition:</b> maze_dig.hpp:111</div></div>
+<div class="ttc" id="anamespacemaze_1_1dig_html_ab12aaccfbbf166c6c19b70f4cb6a2e10"><div class="ttname"><a href="namespacemaze_1_1dig.html#ab12aaccfbbf166c6c19b70f4cb6a2e10">maze::dig::printMap</a></div><div class="ttdeci">void printMap(const vvInt map)</div><div class="ttdoc">マップを出力する</div><div class="ttdef"><b>Definition:</b> maze_dig.hpp:128</div></div>
+<div class="ttc" id="anamespacemaze_html_a1470f540cc92d249243f96f7c224bcea"><div class="ttname"><a href="namespacemaze.html#a1470f540cc92d249243f96f7c224bcea">maze::errMsg</a></div><div class="ttdeci">const std::string errMsg</div><div class="ttdef"><b>Definition:</b> base.hpp:19</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

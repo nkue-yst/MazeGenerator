@@ -1,5 +1,12 @@
+/**
+ * @file maze_dig.hpp
+ * @brief 穴掘り法による迷路生成
+ * @author Yoshito Nakaue
+ * @date 2019/09/07
+ */
+
 #pragma once
-#include "../maze_gen.hpp"
+#include "../Base/base.hpp"
 #include <ctime>
 #include <iostream>
 
@@ -7,6 +14,7 @@ namespace maze
 {
     namespace dig
     {
+        //! 2次元ベクトル
         struct vec2
         {
             int x;
@@ -18,7 +26,14 @@ namespace maze
             {-1, 0},
         };
 
-        /* Initialize maze data */
+        /**
+         * @fn int initMap(vvInt& map, int& width, int& height)
+         * @brief マップ内全てを壁で初期化する
+         * @param map 生成する迷路を格納するマップ
+         * @param width マップの横幅
+         * @param height マップの高さ
+         * @return 成功したら0, 失敗したら1を返す
+         */
         int initMap(vvInt& map, int& width, int& height)
         {
             if (width < 5 || height < 5)
@@ -34,7 +49,12 @@ namespace maze
             return 0;
         }
 
-        /* Create random number.(Odd number) */
+        /**
+         * @fn int randomOdd(int mod)
+         * @brief ランダムな奇数を生成
+         * @param mod 乱数の最大値
+         * @return ランダムな奇数を生成
+         */
         int randomOdd(int mod)
         {
             srand((unsigned int)time(NULL));
@@ -47,7 +67,13 @@ namespace maze
             return r;
         }
 
-        /* Create maze */
+        /**
+         * @fn void digMaze(vvInt& map, const int x, const int y)
+         * @brief 穴掘り法を実行する
+         * @param map 生成した迷路を格納するマップ
+         * @param x マップの横幅
+         * @param y マップの高さ
+         */
         void digMaze(vvInt& map, const int x, const int y)
         {
             int d = rand() % 4;
@@ -74,7 +100,14 @@ namespace maze
             }
         }
 
-        /* Start create maze */
+        /**
+         * @fn int createMaze(vvInt& map, int& width, int& height)
+         * @brief 迷路を生成する
+         * @param map 生成した迷路を格納するマップ
+         * @param width 生成するマップの横幅
+         * @param height 生成するマップの高さ
+         * @return 成功したら0, 失敗したら1
+         */
         int createMaze(vvInt& map, int& width, int& height)
         {
             if (initMap(map, width, height)) return 1;
@@ -87,14 +120,18 @@ namespace maze
             return 0;
         }
 
-        /* Output map on console */
+        /**
+         * @fn void printMap(const vvInt map)
+         * @brief マップを出力する
+         * @param map 出力するマップ
+         */
         void printMap(const vvInt map)
         {
             for (size_t y = 0; y < map[0].size(); y++)
             {
                 for (size_t x = 0; x < map.size(); x++)
                 {
-                    std::cout << ((map[x][y] == WALL) ? "��" : "�@");
+                    std::cout << ((map[x][y] == WALL) ? "* " : "  ");
                 }
                 std::cout << std::endl;
             }
